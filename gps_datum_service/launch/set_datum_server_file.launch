@@ -1,0 +1,4 @@
+<launch>
+  <include file="$(find robot_localization)/launch/navsat_transform_template.launch"/>
+  <node pkg="gps_datum_service" type="set_datum_time_server.py" name="set_datum_time_server" output="screen"/>  
+</launch>
